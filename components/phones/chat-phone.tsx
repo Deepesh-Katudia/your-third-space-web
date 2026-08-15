@@ -26,7 +26,7 @@ export function ChatPhone({ className = "" }: { className?: string }) {
           <div
             className={`${bubbleBase} self-end rounded-[14px_14px_4px_14px] bg-ink text-peach`}
           >
-            Yes — meeting by the front at 6:40
+            Yes, meeting by the front at 6:40
           </div>
 
           <div className="rounded-[10px] border border-dashed border-ink/30 bg-peach/70 px-[11px] py-[9px]">

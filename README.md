@@ -1,6 +1,6 @@
-# The Third Space — marketing site
+# Your Third Space - marketing site
 
-Marketing site for The Third Space, an NYC events app. Not home, not work: find
+Marketing site for Your Third Space, an NYC events app. Not home, not work: find
 real events near you, join in one tap, and land in the group chat with everyone
 else going.
 

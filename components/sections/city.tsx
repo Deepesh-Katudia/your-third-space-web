@@ -5,11 +5,11 @@ export function City() {
     <section id="nyc" className="shell pb-[88px] pt-24">
       <p className="eyebrow text-rust">New York City</p>
       <h2 className="mt-3.5 max-w-[820px] font-display text-display-md font-normal uppercase leading-[0.92] tracking-[0.01em]">
-        Five boroughs. Eight kinds of night. One city to start.
+        Five boroughs. Eight kinds of things to do. One city to start.
       </h2>
       <p className="mt-5 max-w-[520px] text-pretty text-base leading-[1.6] text-taupe">
-        The Third Space is New York only for now. Set your borough and the feed
-        becomes the events you can actually get to tonight.
+        Your Third Space is New York only for now. Set your borough and the feed
+        becomes the events you can actually get to today.
       </p>
 
       <ul className="mt-10 flex flex-wrap gap-2.5">

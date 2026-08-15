@@ -36,7 +36,7 @@ export function SiteFooter() {
 
       <div className="border-t border-peach/[0.18]">
         <div className="shell py-[18px] font-mono text-[9.5px] uppercase tracking-[0.12em] text-peach/50">
-          © {new Date().getFullYear()} The Third Space · New York, NY
+          © {new Date().getFullYear()} Your Third Space · New York, NY
         </div>
       </div>
     </footer>
