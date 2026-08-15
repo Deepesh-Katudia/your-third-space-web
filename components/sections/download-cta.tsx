@@ -11,7 +11,7 @@ export function DownloadCta() {
 
       <div className="shell relative z-[2] flex flex-col items-center pb-28 pt-26 text-center">
         <h2 className="max-w-[900px] font-display text-display-lg font-normal uppercase leading-[0.9] tracking-[0.01em]">
-          Something is happening tonight. Go.
+          Something is happening today. Go.
         </h2>
         <p className="mt-5 max-w-[460px] text-pretty text-[17px] leading-[1.6] text-taupe">
           Free to download. Free to join. Available now on iPhone and Android.

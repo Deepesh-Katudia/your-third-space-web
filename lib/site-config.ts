@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: "The Third Space",
+  name: "Your Third Space",
   wordmark: "THIRDSPACE",
   tagline: "Your third space awaits you.",
   description:
@@ -22,7 +22,7 @@ export const navLinks = [
 
 export const stats = [
   { value: "5", label: "Boroughs covered" },
-  { value: "8", label: "Kinds of night out" },
+  { value: "8", label: "Kinds of things to do" },
   {
     value: String(siteConfig.pointsPerEvent),
     label: "Points every time you show up",
@@ -33,18 +33,18 @@ export const stats = [
 export const steps = [
   {
     number: "01",
-    title: "Find your night",
+    title: "Find your plan",
     body: "Search by name, venue or neighbourhood. Filter by category, by date, by borough. Every event is posted by a real venue and appears the moment it goes up.",
   },
   {
     number: "02",
     title: "Join, and you're in",
-    body: "Registering puts you straight into the event's group chat with everyone else going and the host. No awkward walk-in alone. Change your mind and you leave quietly.",
+    body: "Registering drops you straight into the group chat, everyone going plus the host. You walk in already knowing faces, not a room of strangers. Plans change. Just try to update your RSVP so the host isn't left guessing.",
   },
   {
     number: "03",
     title: "Show up. Stay in touch.",
-    body: "Earn points for turning up, follow the people you actually clicked with, and keep the thread going. One night becomes a group you know.",
+    body: "Earn points for turning up, follow the people you actually clicked with, and keep the thread going. One event becomes a group you know.",
   },
 ] as const;
 
@@ -59,7 +59,7 @@ export const features = [
   },
   {
     title: "Messages with a gate",
-    body: "A first message to someone new waits in Requests until they accept. Decline and it disappears — they're never told.",
+    body: "A first message to someone new waits in Requests until they accept. Decline and it disappears. They're never told.",
   },
   {
     title: "Points & badges",
@@ -67,7 +67,7 @@ export const features = [
   },
   {
     title: "Connections",
-    body: "Follow anyone you meet. Follow each other and you're connected — a one-off night turns into someone you know.",
+    body: "Follow anyone you meet. Follow each other and you're connected. A one-off event turns into someone you know.",
   },
   {
     title: "Host announcements",
@@ -76,7 +76,7 @@ export const features = [
 ] as const;
 
 export const tiers = [
-  { name: "Newcomer", requirement: "First night out", highlight: false },
+  { name: "Newcomer", requirement: "First event", highlight: false },
   { name: "Regular", requirement: "500 points", highlight: false },
   { name: "Insider", requirement: "1,500 points", highlight: true },
 ] as const;

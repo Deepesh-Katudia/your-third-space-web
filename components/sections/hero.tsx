@@ -85,7 +85,7 @@ export function Hero() {
           </h1>
 
           <p className="mt-[22px] max-w-[480px] text-pretty text-[17px] leading-[1.55] text-taupe">
-            Not home. Not work. The room you actually want to be in tonight.
+            Not home. Not work. The room you actually want to be in today.
             Find real events near you, join in one tap, and land in the group
             chat with everyone else going.
           </p>
