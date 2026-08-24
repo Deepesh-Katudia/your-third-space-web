@@ -156,3 +156,124 @@
 @utility bg-sunset {
   background-image: linear-gradient(180deg, #fce3c0 0%, #f3b27a 100%);
 }
+
+/* ---------------------------------------------------------------------------
+ * Curtain reveal (#get)
+ *
+ * The stage is a tall, clip-path'd block. Its child panel is position: fixed,
+ * so it stays pinned to the viewport while the clip region uncovers it from
+ * the bottom up as the stage scrolls in. clip-path clips fixed descendants
+ * without creating a containing block for them, which is what makes this work.
+ * ------------------------------------------------------------------------ */
+
+@utility reveal-stage {
+  position: relative;
+  height: 165svh;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+@utility reveal-panel {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100dvh;
+  /* Curtain progress, 0 (hidden) to 1 (fully uncovered). Written by JS. */
+  --reveal: 0;
+}
+
+/* Content that stages in once the curtain is mostly open. */
+@utility stage-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 750ms cubic-bezier(0.16, 1, 0.3, 1),
+    transform 750ms cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--stage-delay, 0ms);
+}
+
+@utility night-grid {
+  background-size: 64px 64px;
+  background-image:
+    linear-gradient(
+      to right,
+      --alpha(var(--color-parchment) / 6%) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      to bottom,
+      --alpha(var(--color-parchment) / 6%) 1px,
+      transparent 1px
+    );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    black 26%,
+    black 74%,
+    transparent
+  );
+}
+
+/* Outlined display type used for the oversized background wordmark. */
+@utility wordmark-ghost {
+  color: transparent;
+  -webkit-text-stroke: 1px --alpha(var(--color-gold) / 20%);
+  background-image: linear-gradient(
+    180deg,
+    --alpha(var(--color-parchment) / 15%) 0%,
+    transparent 62%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@utility pill-glass {
+  border-radius: 9999px;
+  border: 1px solid --alpha(var(--color-gold) / 32%);
+  background-image: linear-gradient(
+    145deg,
+    --alpha(var(--color-gold) / 12%) 0%,
+    --alpha(var(--color-parchment) / 3%) 100%
+  );
+  backdrop-filter: blur(14px);
+  transition:
+    border-color 320ms ease,
+    background-color 320ms ease,
+    color 320ms ease;
+}
+
+@utility marquee-track {
+  animation: marquee 38s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+[data-revealed="true"] .stage-in {
+  opacity: 1;
+  transform: none;
+}
+
+/* No curtain for readers who asked for less motion: the panel becomes an
+ * ordinary section in the flow, fully composed on arrival. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-stage {
+    height: auto;
+    clip-path: none;
+  }
+
+  .reveal-panel {
+    position: static;
+    height: auto;
+    min-height: 100svh;
+    --reveal: 1;
+  }
+
+  .stage-in {
+    opacity: 1;
+    transform: none;
+  }
+}

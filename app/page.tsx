@@ -1,5 +1,5 @@
 import { City } from "@/components/sections/city";
-import { DownloadCta } from "@/components/sections/download-cta";
+import { DownloadReveal } from "@/components/sections/download-reveal";
 import { Features } from "@/components/sections/features";
 import { Hero } from "@/components/sections/hero";
 import { HostBand } from "@/components/sections/host-band";
@@ -22,7 +22,7 @@ export default function Home() {
         <Rewards />
         <City />
         {siteConfig.showHostBand ? <HostBand /> : null}
-        <DownloadCta />
+        <DownloadReveal />
       </main>
       <SiteFooter />
     </>
