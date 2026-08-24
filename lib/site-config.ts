@@ -75,6 +75,34 @@ export const features = [
   },
 ] as const;
 
+/** Screens in the stacking showcase, in the order they stack. */
+export const appScreens = [
+  {
+    key: "discover",
+    step: "01",
+    title: "Find your plan",
+    body: "Search, then narrow it down: category, today or this weekend, your neighbourhood. The count updates as you go.",
+  },
+  {
+    key: "chat",
+    step: "02",
+    title: "Land in the group chat",
+    body: "Registering puts you in the room before the room. Everyone going, plus the host, in real time.",
+  },
+  {
+    key: "requests",
+    step: "03",
+    title: "Messages with a gate",
+    body: "A first message from someone new waits in Requests until you accept. Decline and it disappears. They're never told.",
+  },
+  {
+    key: "connections",
+    step: "04",
+    title: "Keep the people",
+    body: "Follow anyone you meet. Follow each other and you're connected. A one-off event turns into someone you know.",
+  },
+] as const;
+
 export const tiers = [
   { name: "Newcomer", requirement: "First event", highlight: false },
   { name: "Regular", requirement: "500 points", highlight: false },

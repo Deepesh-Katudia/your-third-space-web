@@ -5,6 +5,7 @@ import { Hero } from "@/components/sections/hero";
 import { HostBand } from "@/components/sections/host-band";
 import { HowItWorks } from "@/components/sections/how-it-works";
 import { Rewards } from "@/components/sections/rewards";
+import { Screens } from "@/components/sections/screens";
 import { Stats } from "@/components/sections/stats";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Stats />
         <HowItWorks />
+        <Screens />
         <Features />
         <Rewards />
         <City />
