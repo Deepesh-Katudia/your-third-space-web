@@ -159,7 +159,7 @@ export function DownloadReveal() {
           {siteConfig.wordmark}
         </div>
 
-        {/* Slanted ticker of the eight things to do. */}
+        {/* Slanted ticker of the ten things to do. */}
         <div
           aria-hidden
           className="absolute inset-x-0 top-[10%] z-10 -rotate-2 scale-110 overflow-hidden border-y border-gold/20 bg-[#150b36]/55 py-2.5 backdrop-blur-md sm:top-[13%] sm:py-3"
