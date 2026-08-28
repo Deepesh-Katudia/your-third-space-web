@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: "Your third space awaits you.",
   description:
     "Not home. Not work. Find real events near you across all five NYC boroughs, join in one tap, and land in the group chat with everyone else going.",
-  url: "https://thethirdspace.app",
+  url: "https://www.yourthirdspace.co",
   /** Points awarded for attending an event. Mirrors utils/points.ts in the app. */
   pointsPerEvent: 50,
   /** Toggles the "For venues & organisers" band. */
