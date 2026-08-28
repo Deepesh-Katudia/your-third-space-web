@@ -22,7 +22,7 @@ export const navLinks = [
 
 export const stats = [
   { value: "5", label: "Boroughs covered" },
-  { value: "8", label: "Kinds of things to do" },
+  { value: "10", label: "Kinds of things to do" },
   {
     value: String(siteConfig.pointsPerEvent),
     label: "Points every time you show up",
@@ -126,6 +126,8 @@ export const categories = [
   { name: "Game night", description: "Arcades and gaming sessions" },
   { name: "Slow down", description: "Sound baths and real rest" },
   { name: "Networking", description: "Career and business nights" },
+  { name: "Speed friending", description: "Meet a handful of people, fast" },
+  { name: "Date night", description: "Occasional, not the focus" },
 ] as const;
 
 export const hostFeatures = [
