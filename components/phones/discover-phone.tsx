@@ -3,11 +3,8 @@ import { DiscoverScreen } from "@/components/phones/screens/discover-screen";
 
 export function DiscoverPhone({ className = "" }: { className?: string }) {
   return (
-    <PhoneFrame
-      size="md"
-      className={`z-[2] ${className}`}
-      screenClassName="bg-sunrise"
-    >
+    // The screen paints its own ambient background, so the frame stays bare.
+    <PhoneFrame size="md" className={`z-[2] ${className}`}>
       <DiscoverScreen />
     </PhoneFrame>
   );

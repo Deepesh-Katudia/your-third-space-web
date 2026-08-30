@@ -1,5 +1,5 @@
-import { ChatPhone } from "@/components/phones/chat-phone";
 import { DiscoverPhone } from "@/components/phones/discover-phone";
+import { RewardPhone } from "@/components/phones/reward-phone";
 import { StoreButton } from "@/components/ui/store-button";
 import { siteConfig } from "@/lib/site-config";
 
@@ -111,7 +111,7 @@ export function Hero() {
         </div>
 
         <div className="flex w-full items-end justify-center lg:w-auto lg:flex-[0_1_auto]">
-          <ChatPhone className="hidden translate-x-7 -rotate-[5deg] lg:block" />
+          <RewardPhone className="hidden translate-x-7 -rotate-[5deg] lg:block" />
           <DiscoverPhone />
         </div>
       </div>

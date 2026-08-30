@@ -8,6 +8,7 @@ import { ChatScreen } from "@/components/phones/screens/chat-screen";
 import { ConnectionsScreen } from "@/components/phones/screens/connections-screen";
 import { DiscoverScreen } from "@/components/phones/screens/discover-screen";
 import { RequestsScreen } from "@/components/phones/screens/requests-screen";
+import { RewardScreen } from "@/components/phones/screens/reward-screen";
 import { appScreens } from "@/lib/site-config";
 
 /**
@@ -21,10 +22,12 @@ const LIFT_PERCENT = 4;
 const DIM_DROP = 0.12;
 
 const screenRenderers = {
-  discover: { Screen: DiscoverScreen, background: "bg-sunrise" },
+  // Discover and reward each paint their own screen background.
+  discover: { Screen: DiscoverScreen, background: "" },
   chat: { Screen: ChatScreen, background: "bg-apricot" },
   requests: { Screen: RequestsScreen, background: "bg-sunrise" },
   connections: { Screen: ConnectionsScreen, background: "bg-sunrise" },
+  reward: { Screen: RewardScreen, background: "bg-[#161213]" },
 } as const;
 
 export function Screens() {
@@ -107,7 +110,7 @@ export function Screens() {
                 id="screens-heading"
                 className="mt-3.5 max-w-[520px] font-display text-display-sm font-normal uppercase leading-[0.94] tracking-[0.01em]"
               >
-                Four screens between a listing and a group you know.
+                Five screens between a listing and a group you know.
               </h2>
               <p className="mt-5 max-w-[440px] text-pretty text-base leading-[1.6] text-taupe">
                 Scroll through the app the way you&apos;d actually use it, from

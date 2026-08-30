@@ -101,6 +101,12 @@ export const appScreens = [
     title: "Keep the people",
     body: "Follow anyone you meet. Follow each other and you're connected. A one-off event turns into someone you know.",
   },
+  {
+    key: "reward",
+    step: "05",
+    title: "Collect the badge",
+    body: "Showing up and hosting both count. Points land the moment the moment does, and the badge is yours to keep.",
+  },
 ] as const;
 
 export const tiers = [
